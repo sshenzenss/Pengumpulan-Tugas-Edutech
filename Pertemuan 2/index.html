@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Atthariqia Vidina Caya</h1>
+    </header>
+
+    <section class="about">
+        <h2>Tentang Saya</h2>
+        <p>
+            Saya adalah mahasiswa Teknik Informatika yang memiliki minat
+            dalam bidang pengembangan perangkat lunak, pengembangan web,
+            dan kecerdasan buatan. Saya senang mempelajari teknologi baru
+            serta mengembangkan kemampuan pemrograman.
+        </p>
+    </section>
+
+    <section class="education">
+        <h2>Riwayat Pendidikan</h2>
+        <ul>
+            <li>SMAQ Darul Fattah (2022 - 2025)</li>
+            <li>Universitas Lampung (2025 - Sekarang)</li>
+        </ul>
+    </section>
+
+    <section class="skills">
+        <h2>Skill</h2>
+        <div class="skill-list">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Python</span>
+        </div>
+    </section>
+
+    <section class="projects">
+        <h2>Proyek Saya</h2>
+
+        <div class="filter-buttons">
+            <button onclick="filterProject('all')">Semua</button>
+            <button onclick="filterProject('web')">Web Dev</button>
+            <button onclick="filterProject('iot')">IoT</button>
+            <button onclick="filterProject('uiux')">UI/UX</button>
+        </div>
+
+        <div class="project-list">
+
+            <div class="project-item web">
+                <h3>Website Portofolio</h3>
+                <p>Membuat website portofolio menggunakan HTML dan CSS.</p>
+            </div>
+
+            <div class="project-item iot">
+                <h3>Sistem Monitoring Suhu</h3>
+                <p>Monitoring suhu ruangan menggunakan sensor IoT.</p>
+            </div>
+
+            <div class="project-item uiux">
+                <h3>Desain Aplikasi Seminar</h3>
+                <p>Membuat prototype aplikasi seminar menggunakan Figma.</p>
+            </div>
+
+            <div class="project-item web">
+                <h3>Website Perpustakaan</h3>
+                <p>Sistem pencarian buku berbasis web.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Kontak</h2>
+        <p>Email: atthariqiavc@gmail.com</p>
+        <p>Instagram: <a href="https://www.instagram.com/atthariqiacaya" target="_blank">@atthariqiacaya</a></p>
+        <p>GitHub: <a href="https://github.com/sshenzenss" target="_blank">sshenzenss</a></p>
+    </section>
+
+    <section class="contact-form">
+        <h2>Hubungi Saya</h2>
+
+        <input type="text" id="messageInput" placeholder="Tulis pesan Anda">
+
+        <button onclick="validateForm()">
+            Kirim
+        </button>
+
+        <p id="warningMessage"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Atthariqia.</p>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
